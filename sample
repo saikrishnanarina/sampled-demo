@@ -6,5 +6,10 @@ pipeline {
                 git credentialsId: 'admin', url: 'https://github.com/saikrishnanarina/boxfuse'
             }
         }
+        stage("Maven Build") {
+            staps{
+                sh "mvn clean install"
+            }
+        }
     }
 }
