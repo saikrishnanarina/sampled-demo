@@ -15,7 +15,7 @@ pipeline {
         stage("tomcat-deploy") {
           steps{
                 sshagent(['ec2-user']) {
-                sh "scp -o StrictHostKeyChecking=no ec2-user@172.31.30.3:/home/ec2-user"
+                sh "scp -o ec2-user@172.31.30.3:/home/ec2-user"
                 sh "mkdir /home/ec2-user/pipeline"
                 //sshagent(['deploy-tomcat']) {
                     //sh """
