@@ -22,7 +22,7 @@ pipeline {
                 ssh ec2-user@172.31.30.3 /opt/tomcat/bin/shutdown.sh
                 ssh ec2-user@172.31.30.3 /opt/tomcat/bin/startup.sh
                 
-                //"""
+                """
 }
           }
         }
