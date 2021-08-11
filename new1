@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("git checkout") {
             steps{
-                git credentialsId: 'admin', url: 'https://github.com/saikrishnanarina/onlinebookstore.git'
+                git credentialsId: 'admin', url: 'https://github.com/saikrishnanarina/onlinebookstore'
             }
         }
         stage("Maven Build") {
